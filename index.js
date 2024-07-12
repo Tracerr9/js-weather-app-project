@@ -7,7 +7,7 @@ document.getElementById('submitButton').addEventListener('click', () => {
   const city = document.getElementById('cityName').value;
   const encodedCity = encodeURIComponent(city)
 
-  const apiUrl =`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${encodedCity}&aqi=no`;
+  const apiUrl =`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${encodedCity}&aqi=no`;
   getWeather(apiUrl)
 })
 
