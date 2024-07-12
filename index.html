@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Website</title>
+  <style>
+
+    #weather-info {
+      background-color: rgba(212, 212, 212, 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 16px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      left: 50%;
+      padding: 10px;
+      border-radius: 15px;
+    }
+
+    img {
+      width: 36px;
+    }
+
+    .condition-img {
+      width: 64px;
+    }
+
+    .temp {
+      display: flex;
+      align-items: center;
+    }
+
+    .input {
+      position: absolute;
+      transform:translateX(-50%);
+      left: 50%;
+      padding: 10px;
+    }
+
+    .input>input {
+      width: 250px;
+      height: 24px;
+      margin-right: 0;
+    }
+
+    #submitButton {
+      height: 30px;
+      margin-left: -5px;
+    }
+
+    .note {
+      position: absolute;
+      transform:translateX(-50%);
+      left: 50%;
+      top: 56px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="input">
+    <input type="text" placeholder="Enter a city name" id="cityName">
+    <button id="submitButton">Get Weather</button>
+  </div>
+  <div class="note">
+      Note: Api trial only until 26-07-2024, after that the weather web won't work.
+  </div>
+      
+
+    <div id="weather-info">
+      <h2>
+        Jakarta - Indonesia
+      </h2>
+
+      
+      <img class="condition-img" src="//cdn.weatherapi.com/weather/64x64/night/116.png">
+      Partly cloudy 
+      <div class="temp">
+        <img src="thermometer-icon.png">
+       27.4 °C
+      </div>
+      
+      
+    </div>
+
+  <script src="index.js">
+  </script>
+</body>
+</html>
